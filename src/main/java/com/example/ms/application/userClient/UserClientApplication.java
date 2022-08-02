@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
-@RequestMapping("/health")
+@RequestMapping("/userClient")
 public class UserClientApplication {
 
 	public static void main(String[] args) {
@@ -19,7 +19,7 @@ public class UserClientApplication {
 	
 	@GetMapping( value = "/healthCheck")
 	public String healthCheck() {
-		return ("HealthCheck is up and Running");
+		return ("userClient is up and Running");
 	}
 
 }
