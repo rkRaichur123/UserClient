@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
-@RequestMapping("/userClient")
+@RequestMapping("/api/user")
 public class UserClientApplication {
 
 	public static void main(String[] args) {
