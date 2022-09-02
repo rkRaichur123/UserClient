@@ -20,6 +20,11 @@ public class UserController {
 
 	@GetMapping( value = "/getUserDetails")
 	public String getUserDetails() {
+		return "Test User";
+	}
+
+	@GetMapping( value = "/getUserDetailsWithCB")
+	public String getUserDetailsForCB() {
 		return userServie.getUserDetails();
 	}
 
